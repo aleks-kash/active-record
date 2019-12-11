@@ -1,0 +1,15 @@
+{
+    "name": "user/test_code_active",
+    "authors": [
+        {
+            "name": "Alexey",
+            "email": "a.s.kashtanov@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "7.2.* || 7.3.* || 7.4.*"
+    },
+    "autoload": {
+        "psr-4": { "": "src/" }
+    }
+}
