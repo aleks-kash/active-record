@@ -8,7 +8,6 @@
 namespace core\db;
 
 use core\App;
-use models\entity\PredictionCategory;
 
 class DataBaseMySQL implements DataBase
 {

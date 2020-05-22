@@ -57,8 +57,7 @@ class SelectQueryModel extends Model
         if(!$orderBy){
             $this->orderBy = [];
         } else {
-            $orderBy = array_merge($this->orderBy, [$orderBy]);
-            $this->orderBy = $orderBy;
+            $this->orderBy[] = array_merge($this->orderBy, [$orderBy]);
         }
 
         return $this;

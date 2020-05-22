@@ -99,12 +99,11 @@ class SelectQueryBuilder implements QueryBuilder
     }
 
     /**
-     * @param mixed $orderBy The query restrictions.
      * @return $this
      */
-    public function orderBy($orderBy)
+    public function orderBy()
     {
-        return $this->addMultiple('orderBy', $orderBy);
+        return $this->addMultiple('orderBy', func_get_args());
     }
 
     /**

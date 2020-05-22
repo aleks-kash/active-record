@@ -6,9 +6,6 @@ use core\Model;
 
 abstract class EntityModel extends Model
 {
-    /**
-     * @return int|null
-     */
     abstract public function getId(): ? int;
 
     public function __set($name, $value): void
@@ -17,9 +14,6 @@ abstract class EntityModel extends Model
         parent::__set($name, $value);
     }
 
-    /**
-     * @return array
-     */
     public function getProperties(): array
     {
         $properties = [];
@@ -38,9 +32,6 @@ abstract class EntityModel extends Model
         return $properties;
     }
 
-    /**
-     * @return MainRepository
-     */
     public static function repository(): MainRepository
     {
         static $repositories = [];

@@ -33,21 +33,11 @@ class ActiveRecord
         $this->repository = $repository;
     }
 
+    /**
+     * @return DataBase
+     */
     public function getDataBase()
     {
         return $this->dataBase;
     }
-
-//    public function getLastId(): ? int
-//    {
-//        return $this->getLastRecord()->id;
-//    }
-//
-//    public function getLastRecord(): ? EntityModel
-//    {
-//        $query = $this->makeSelectQuery();
-//        $query .= ' ORDER BY id DESC LIMIT 1';
-//        $response = $this->queryOne($query);
-//        return $response ? $this->makeEntityModel($response) : null;
-//    }
 }
